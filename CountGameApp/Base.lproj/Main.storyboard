@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="chx-EY-bkG">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="D40-Uy-MBM">
+            <objects>
+                <viewController id="chx-EY-bkG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nkh-x4-ryb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jck-DP-vmH">
+                                <rect key="frame" x="60" y="184" width="200" height="200"/>
+                                <color key="backgroundColor" red="0.45085787770000002" green="0.98829740290000001" blue="0.83763033149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="7RK-kE-PmV"/>
+                                    <constraint firstAttribute="width" constant="200" id="efq-XI-hCZ"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="START">
+                                            <attributes>
+                                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <font key="NSFont" size="50" name="HiraMaruProN-W4"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="AnI-36-mHZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FMv-7c-BCm">
+                                <rect key="frame" x="15" y="50" width="290" height="99"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="COUNT">
+                                        <attributes>
+                                            <color key="NSColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="64" name="HiraMaruProN-W4"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Jck-DP-vmH" firstAttribute="centerY" secondItem="Nkh-x4-ryb" secondAttribute="centerY" id="Okb-be-YCJ"/>
+                            <constraint firstItem="FMv-7c-BCm" firstAttribute="top" secondItem="Obl-1c-OYm" secondAttribute="top" constant="30" id="i0J-Z7-U6D"/>
+                            <constraint firstItem="Jck-DP-vmH" firstAttribute="centerX" secondItem="Nkh-x4-ryb" secondAttribute="centerX" id="iiU-7w-11m"/>
+                            <constraint firstItem="Jck-DP-vmH" firstAttribute="top" secondItem="FMv-7c-BCm" secondAttribute="bottom" constant="35" id="oJl-UM-pKZ"/>
+                            <constraint firstItem="Obl-1c-OYm" firstAttribute="trailing" secondItem="FMv-7c-BCm" secondAttribute="trailing" constant="15" id="teT-RG-MX9"/>
+                            <constraint firstItem="FMv-7c-BCm" firstAttribute="leading" secondItem="Obl-1c-OYm" secondAttribute="leading" constant="15" id="wEZ-hT-amS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Obl-1c-OYm"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DCz-Sh-xS2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-9.375" y="117.25352112676056"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CountGameApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IUd-xu-PKc">
+                                <rect key="frame" x="60" y="298" width="200" height="200"/>
+                                <color key="backgroundColor" red="1" green="0.50601660500967993" blue="0.535328458275384" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="4Od-qw-DAT"/>
+                                    <constraint firstAttribute="width" constant="200" id="Qyk-lc-jhy"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="TAP">
+                                            <attributes>
+                                                <color key="NSColor" red="0.99981683801229082" green="1" blue="0.97079154076741048" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="50" name="HiraMaruProN-W4"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="countTapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mta-PU-wsc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m5E-UE-lnh">
+                                <rect key="frame" x="40" y="120" width="240" height="100"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="GAME OVER">
+                                        <attributes>
+                                            <font key="NSFont" size="100" name="HiraMaruProN-W4"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hEf-Dr-sye">
+                                <rect key="frame" x="40" y="228" width="240" height="62"/>
+                                <color key="backgroundColor" red="1" green="0.89500535940000003" blue="0.1511631695" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="1hz-e7-0EU"/>
+                                    <constraint firstAttribute="width" constant="240" id="xfb-kh-PDA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hEf-Dr-sye" firstAttribute="top" secondItem="m5E-UE-lnh" secondAttribute="bottom" constant="8" id="3kX-UK-xYe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IUd-xu-PKc" secondAttribute="bottom" constant="70" id="Bnb-ed-Iqh"/>
+                            <constraint firstItem="m5E-UE-lnh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="WHH-ua-O7f"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="m5E-UE-lnh" secondAttribute="trailing" constant="40" id="XzK-nZ-nBQ"/>
+                            <constraint firstItem="m5E-UE-lnh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="aRm-rg-j5C"/>
+                            <constraint firstItem="IUd-xu-PKc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bxc-bW-P1A"/>
+                            <constraint firstItem="hEf-Dr-sye" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mWM-9X-dRB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="countLabel" destination="m5E-UE-lnh" id="L35-jx-q2S"/>
+                        <outlet property="countTapLabel" destination="IUd-xu-PKc" id="zNE-f7-wUQ"/>
+                        <outlet property="optionsConstrait" destination="mWM-9X-dRB" id="zyS-M9-HYG"/>
+                        <outlet property="optionsLabel" destination="hEf-Dr-sye" id="v4D-PY-T32"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="830.625" y="132.04225352112675"/>
+        </scene>
+    </scenes>
+</document>
